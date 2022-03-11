@@ -1,0 +1,94 @@
+
+body{
+    font-family: 'Roboto', arial;
+    margin: 0px;
+    background-color: gray;
+    z-index: 0;
+}
+
+header{
+    /*sizing*/
+    margin: 0px;
+    width: 100%;
+    padding: 3%;
+    /*styling*/
+    background-color: Black;
+    /*text*/
+    color: white;
+    font-size: large;
+    /*display*/
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main{
+    margin: 0px;
+    padding-top: 20px;
+}
+
+
+footer{
+    margin: 0px;
+    background-color: black;
+}
+
+
+/*Navbar*/
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.nav-box{
+    text-align: center;
+    color: white;
+    font-size: medium;
+    margin-left: 2%;
+    margin-right: 2%;
+    white-space: nowrap;
+}
+
+.nav-dropdown{
+
+}
+
+
+/* Animations are grouped with their respective classes if they have them */
+
+/*The Intro Animation*/
+.splash{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+@keyframes fadeIn{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+
+.fade-in{
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeOut{
+    from{ opacity: 1;}
+    to{ opacity: 0; z-index: -10;}
+}
+
+.fade-out{
+    animation: fadeOut 1s ease-out forwards;
+}
+/*End Intro Animation*/
